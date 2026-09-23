@@ -45,22 +45,12 @@
   burger.addEventListener('click', () => setMenu(mnav.hidden));
   mnav.addEventListener('click', (e) => { if (e.target.closest('a')) setMenu(false); });
 
-  // Hero: simulated mains failure. The load keeps running.
+  // Hero: a simulated mains failure plays once. The load keeps running.
   const hero = $('[data-hero]');
-  const sim = $('[data-sim]');
-  const labels = $$('.status__item b');
-  const setOut = (out) => {
-    hero.classList.toggle('is-out', out);
-    labels.forEach((b) => { b.textContent = out ? b.dataset.out : b.dataset.ok; });
-  };
-  const runOutage = () => {
-    if (hero.classList.contains('is-out')) return;
-    sim.disabled = true;
-    setOut(true);
-    setTimeout(() => { setOut(false); sim.disabled = false; }, 4200);
-  };
-  sim.addEventListener('click', runOutage);
-  if (!still) setTimeout(runOutage, 2600);
+  if (!still) {
+    setTimeout(() => hero.classList.add('is-out'), 2600);
+    setTimeout(() => hero.classList.remove('is-out'), 6800);
+  }
 
   // Problem → answer tabs (desktop); on small screens every answer is shown
   const tabs = $$('[data-fix] [role="tab"]');
