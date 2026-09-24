@@ -107,6 +107,11 @@
 
   // Hero: a simulated mains failure plays once. The load keeps running.
   const hero = $('[data-hero]');
+  // On narrow screens the facts wrap onto several rows, so the phase waves sit just above wherever they end up
+  const facts = $('.hero__facts', hero);
+  const seatPhases = () => hero.style.setProperty('--facts', `${hero.getBoundingClientRect().bottom - facts.getBoundingClientRect().top}px`);
+  seatPhases();
+  window.addEventListener('resize', seatPhases);
   if (!still) {
     setTimeout(() => hero.classList.add('is-out'), 2600);
     setTimeout(() => hero.classList.remove('is-out'), 6800);

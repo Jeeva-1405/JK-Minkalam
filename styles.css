@@ -407,7 +407,9 @@ body.menu-open { overflow: hidden; }
   .hdr__nav a { padding: 8px 11px; }
 }
 @media (max-width: 1080px) {
-  .hero__phases { display: none; }
+  .hero__phases { bottom: calc(var(--facts, 260px) + 8px); height: 110px; }
+  .hero__phases path { opacity: .3; }
+  .hero__phases .ph-y { opacity: .42; }
   .hero__in { grid-template-columns: 1fr; }
   .hero__art { max-width: 720px; }
   .hero__facts { grid-template-columns: repeat(3, auto); justify-content: start; }
@@ -429,12 +431,17 @@ body.menu-open { overflow: hidden; }
   .hdr__menu { display: inline-flex; }
   .hero { padding-top: 112px; }
   .fix__head, .trust__head, .ftr__top, .proc__head, .proc__grid { grid-template-columns: 1fr; }
-  .proc__side { display: none; }
-  .stp { min-height: 0; padding: 36px 0 36px 22px; }
-  .stp__no { display: block; }
+  /* the counter becomes a slim bar that sticks under the header while the steps scroll past */
+  .proc__grid { display: block; }
+  .proc__side { position: sticky; top: 76px; z-index: 2; height: auto; flex-direction: row; flex-wrap: wrap; justify-content: flex-start; align-items: center; gap: 6px 16px; margin: 0 calc(var(--gut) * -1); padding: 14px var(--gut) 16px; background: rgba(7, 24, 63, .9); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); border-bottom: 1px solid rgba(255, 255, 255, .12); }
+  .proc__dial { align-items: baseline; gap: 6px; }
+  .proc__num { font-size: 44px; letter-spacing: -.05em; }
+  .proc__of { margin-top: 0; font-size: 14px; }
+  .proc__name { margin-top: 0; font-size: 22px; }
+  .proc__meter { flex-basis: 100%; max-width: none; margin-top: 4px; }
+  .stp { min-height: 0; padding: 40px 0 40px 22px; }
   .stp__get { border-radius: 16px; }
-  .js .stp > *, .js .stp h3 { opacity: 1; transform: none; }
-  .js .stp::before { height: 100%; }
+  .js .stp > * { opacity: .3; }
   .ftr__cols { grid-template-columns: 1fr 1fr; row-gap: 40px; }
   .fix__head p, .trust__head p { justify-self: start; }
   .iso__in { grid-template-columns: 1fr; }
