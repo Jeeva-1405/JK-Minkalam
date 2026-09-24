@@ -328,87 +328,90 @@
 </section>
 
 <!-- ============ PROBLEMS ============ -->
-<section class="fix" id="problems">
+<section class="fix" id="problems" data-fix>
   <div class="wrap">
     <header class="fix__head">
       <h2>Tell us what’s going wrong.</h2>
-      <p>Most of our projects start with a problem, not a product code. Pick the one that sounds like your site and see how we’d fix it.</p>
+      <p>Most of our projects start with a problem, not a product code. Here are the six we hear most, and how each one ends.</p>
     </header>
 
-    <div class="fix__ui" data-fix>
-      <div class="fix__tabs" role="tablist" aria-label="Common problems">
-        <button role="tab" id="q1" aria-controls="a1" aria-selected="true"><span>Power cuts stop our production.</span></button>
-        <button role="tab" id="q2" aria-controls="a2" aria-selected="false"><span>Our electricity bill keeps climbing.</span></button>
-        <button role="tab" id="q3" aria-controls="a3" aria-selected="false"><span>The server room runs hot and full.</span></button>
-        <button role="tab" id="q4" aria-controls="a4" aria-selected="false"><span>We can’t see what the plant is doing.</span></button>
-        <button role="tab" id="q5" aria-controls="a5" aria-selected="false"><span>Machines need constant babysitting.</span></button>
-        <button role="tab" id="q6" aria-controls="a6" aria-selected="false"><span>We need eyes on the site, day and night.</span></button>
-      </div>
-
-      <div class="fix__panels">
-        <article class="ans is-on" id="a1" role="tabpanel" aria-labelledby="q1">
-          <p class="ans__q">Power cuts stop our production.</p>
-          <p class="ans__tag">Our answer</p>
-          <h3>Power backup &amp; power quality</h3>
+    <ol class="fix__list">
+      <li class="fx" data-fx>
+        <span class="fx__no">01</span>
+        <div class="fx__main">
+          <h3 class="fx__pb"><span>Power cuts stop our production.</span></h3>
+          <p class="fx__fix"><small>Fixed with</small>power backup &amp; power quality.</p>
+        </div>
+        <div class="fx__more">
           <p>Online UPS sized to your real load, industrial battery banks for the backup time you need, and stabilisers, isolation transformers and surge protection so the supply that reaches your machines is clean.</p>
-          <ul class="ans__chips"><li>Online UPS</li><li>Industrial batteries &amp; banks</li><li>Servo &amp; static stabilisers</li><li>Isolation transformers</li><li>Surge protection</li><li>Power conditioning</li></ul>
-          <p class="ans__oem"><span>Brands</span>Exide · Numax · Schneider Electric · Eaton</p>
-          <a href="#contact" class="btn btn--white btn--sm" data-pick="Power Backup &amp; Power Quality">Discuss this with an engineer</a>
-        </article>
-
-        <article class="ans" id="a2" role="tabpanel" aria-labelledby="q2">
-          <p class="ans__q">Our electricity bill keeps climbing.</p>
-          <p class="ans__tag">Our answer</p>
-          <h3>Energy management &amp; metering</h3>
+          <p class="fx__oem">Exide, Numax, Schneider Electric, Eaton</p>
+          <a href="#contact" class="fx__go" data-pick="Power Backup &amp; Power Quality">Talk to an engineer</a>
+        </div>
+      </li>
+      <li class="fx" data-fx>
+        <span class="fx__no">02</span>
+        <div class="fx__main">
+          <h3 class="fx__pb"><span>Our electricity bill keeps climbing.</span></h3>
+          <p class="fx__fix"><small>Fixed with</small>energy management &amp; metering.</p>
+        </div>
+        <div class="fx__more">
           <p>Measure first. Multifunction meters and power-quality analysers show where the energy goes and where it’s wasted, then an energy management system keeps tracking it, feeder by feeder.</p>
-          <ul class="ans__chips"><li>Energy meters</li><li>Power quality analysers</li><li>Transducers &amp; CTs</li><li>Protection relays</li><li>Controllers</li><li>EMS software</li></ul>
-          <p class="ans__oem"><span>Brands</span>Rishabh · Schneider Electric</p>
-          <a href="#contact" class="btn btn--white btn--sm" data-pick="Energy Management &amp; Metering">Discuss this with an engineer</a>
-        </article>
-
-        <article class="ans" id="a3" role="tabpanel" aria-labelledby="q3">
-          <p class="ans__q">The server room runs hot and full.</p>
-          <p class="ans__tag">Our answer</p>
-          <h3>IT &amp; data centre, with environmental monitoring</h3>
+          <p class="fx__oem">Rishabh, Schneider Electric</p>
+          <a href="#contact" class="fx__go" data-pick="Energy Management &amp; Metering">Talk to an engineer</a>
+        </div>
+      </li>
+      <li class="fx" data-fx>
+        <span class="fx__no">03</span>
+        <div class="fx__main">
+          <h3 class="fx__pb"><span>The server room runs hot and full.</span></h3>
+          <p class="fx__fix"><small>Fixed with</small>a data centre that watches itself.</p>
+        </div>
+        <div class="fx__more">
           <p>Rittal racks and containment, precision cooling and intelligent PDUs, from a single edge cabinet to a full server room. Temperature, humidity and differential-pressure sensors warn you before anything overheats.</p>
-          <ul class="ans__chips"><li>Racks &amp; containment</li><li>Precision cooling</li><li>Intelligent PDUs</li><li>Servers, storage &amp; networking</li><li>Temperature &amp; humidity</li><li>Differential pressure</li></ul>
-          <p class="ans__oem"><span>Brands</span>Rittal · HP · Lenovo · Rishabh</p>
-          <a href="#contact" class="btn btn--white btn--sm" data-pick="IT &amp; Data Centre">Discuss this with an engineer</a>
-        </article>
-
-        <article class="ans" id="a4" role="tabpanel" aria-labelledby="q4">
-          <p class="ans__q">We can’t see what the plant is doing.</p>
-          <p class="ans__tag">Our answer</p>
-          <h3>SCADA &amp; IIoT</h3>
+          <p class="fx__oem">Rittal, HP, Lenovo, Rishabh</p>
+          <a href="#contact" class="fx__go" data-pick="IT &amp; Data Centre">Talk to an engineer</a>
+        </div>
+      </li>
+      <li class="fx" data-fx>
+        <span class="fx__no">04</span>
+        <div class="fx__main">
+          <h3 class="fx__pb"><span>We can’t see what the plant is doing.</span></h3>
+          <p class="fx__fix"><small>Fixed with</small>SCADA &amp; IIoT.</p>
+        </div>
+        <div class="fx__more">
           <p>Rishabh PROMOTIC SCADA gives you live dashboards, alarms, a historian and automated reports. IIoT edge gateways connect the machines SCADA can’t reach and track OEE from anywhere.</p>
-          <ul class="ans__chips"><li>Live dashboards</li><li>Alarm management</li><li>Historian &amp; reports</li><li>Modbus / OPC integration</li><li>Edge gateways</li><li>OEE &amp; cloud dashboards</li></ul>
-          <p class="ans__oem"><span>Brands</span>Rishabh PROMOTIC · MELSS · Utthunga</p>
-          <a href="#contact" class="btn btn--white btn--sm" data-pick="SCADA">Discuss this with an engineer</a>
-        </article>
-
-        <article class="ans" id="a5" role="tabpanel" aria-labelledby="q5">
-          <p class="ans__q">Machines need constant babysitting.</p>
-          <p class="ans__tag">Our answer</p>
-          <h3>PLC automation &amp; Industry 4.0</h3>
+          <p class="fx__oem">Rishabh PROMOTIC, MELSS, Utthunga</p>
+          <a href="#contact" class="fx__go" data-pick="SCADA">Talk to an engineer</a>
+        </div>
+      </li>
+      <li class="fx" data-fx>
+        <span class="fx__no">05</span>
+        <div class="fx__main">
+          <h3 class="fx__pb"><span>Machines need constant babysitting.</span></h3>
+          <p class="fx__fix"><small>Fixed with</small>PLC automation.</p>
+        </div>
+        <div class="fx__more">
           <p>Schneider Modicon, Siemens SIMATIC and Allen-Bradley PLCs, programmed and integrated with HMI, VFDs and MCC panels. Add predictive maintenance so breakdowns are caught before they stop the line.</p>
-          <ul class="ans__chips"><li>PLC programming</li><li>HMI</li><li>VFD</li><li>MCC panels</li><li>Industrial networks</li><li>Predictive maintenance</li></ul>
-          <p class="ans__oem"><span>Brands</span>Schneider Electric · Siemens · Rockwell Automation · MELSS</p>
-          <a href="#contact" class="btn btn--white btn--sm" data-pick="PLC Automation">Discuss this with an engineer</a>
-        </article>
-
-        <article class="ans" id="a6" role="tabpanel" aria-labelledby="q6">
-          <p class="ans__q">We need eyes on the site, day and night.</p>
-          <p class="ans__tag">Our answer</p>
-          <h3>CCTV, surveillance &amp; gas detection</h3>
+          <p class="fx__oem">Schneider Electric, Siemens, Rockwell Automation, MELSS</p>
+          <a href="#contact" class="fx__go" data-pick="PLC Automation">Talk to an engineer</a>
+        </div>
+      </li>
+      <li class="fx" data-fx>
+        <span class="fx__no">06</span>
+        <div class="fx__main">
+          <h3 class="fx__pb"><span>We need eyes on the site, day and night.</span></h3>
+          <p class="fx__fix"><small>Fixed with</small>CCTV &amp; gas detection.</p>
+        </div>
+        <div class="fx__more">
           <p>HiFocus IP and PTZ cameras with NVRs, perimeter security and AI video analytics, viewable remotely. For hazardous areas, gas, VOC and PM2.5/PM10 monitoring tied into your alarms.</p>
-          <ul class="ans__chips"><li>IP &amp; PTZ cameras</li><li>NVRs</li><li>Centralised monitoring</li><li>Perimeter security</li><li>AI video analytics</li><li>Gas &amp; air-quality detection</li></ul>
-          <p class="ans__oem"><span>Brands</span>HiFocus · Rishabh</p>
-          <a href="#contact" class="btn btn--white btn--sm" data-pick="CCTV &amp; Surveillance">Discuss this with an engineer</a>
-        </article>
-      </div>
-    </div>
+          <p class="fx__oem">HiFocus, Rishabh</p>
+          <a href="#contact" class="fx__go" data-pick="CCTV &amp; Surveillance">Talk to an engineer</a>
+        </div>
+      </li>
+    </ol>
 
-    <p class="fix__all"><b>All eight solution lines:</b> Power backup &amp; power quality · Energy management &amp; metering · IT &amp; data centre · Environmental monitoring · CCTV &amp; surveillance · PLC automation · IIoT &amp; Industry 4.0 · SCADA</p>
+    <a href="#contact" class="fix__else"><span>Something else going wrong?</span> <em>Tell us.</em></a>
+    <p class="fix__all">Eight solution lines: power backup &amp; power quality, energy management &amp; metering, IT &amp; data centre, environmental monitoring, CCTV &amp; surveillance, PLC automation, IIoT &amp; Industry 4.0, and SCADA.</p>
   </div>
 </section>
 

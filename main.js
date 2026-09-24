@@ -117,25 +117,18 @@
     setTimeout(() => hero.classList.remove('is-out'), 6800);
   }
 
-  // Problem → answer tabs (desktop); on small screens every answer is shown
-  const tabs = $$('[data-fix] [role="tab"]');
-  const pick = (tab, focus) => {
-    tabs.forEach((t) => {
-      const on = t === tab;
-      t.setAttribute('aria-selected', on);
-      t.tabIndex = on ? 0 : -1;
-      document.getElementById(t.getAttribute('aria-controls')).classList.toggle('is-on', on);
-    });
-    if (focus) tab.focus();
+  // Problems: as each one passes the middle of the screen it is struck through and its fix is written in. Struck ones stay struck.
+  const fxs = $$('[data-fx]');
+  const strike = () => {
+    const line = window.innerHeight * 0.6;
+    let on = null;
+    fxs.forEach((f) => { if (f.getBoundingClientRect().top < line) { f.classList.add('is-fixed'); on = f; } });
+    if (on && on.getBoundingClientRect().bottom < window.innerHeight * 0.2) on = null;
+    fxs.forEach((f) => f.classList.toggle('is-on', f === on));
   };
-  tabs.forEach((t, i) => {
-    t.tabIndex = i ? -1 : 0;
-    t.addEventListener('click', () => pick(t));
-    t.addEventListener('keydown', (e) => {
-      const d = { ArrowDown: 1, ArrowRight: 1, ArrowUp: -1, ArrowLeft: -1 }[e.key];
-      if (d) { e.preventDefault(); pick(tabs[(i + d + tabs.length) % tabs.length], true); }
-    });
-  });
+  strike();
+  window.addEventListener('scroll', strike, { passive: true });
+  window.addEventListener('resize', strike);
 
   // Process: the step nearest the middle of the screen is lit, and the sticky counter rolls to it
   const proc = $('[data-proc]');
@@ -172,7 +165,7 @@
   }
 
   // Reveal on scroll
-  const els = $$('.fix__head, .fix__ui, .trust__head, .oem__lead, .oem__wall, .iso__doc, .iso__txt, .talk__h, .lib, .talk__side');
+  const els = $$('.fix__head, .trust__head, .oem__lead, .oem__wall, .iso__doc, .iso__txt, .talk__h, .lib, .talk__side');
   if ('IntersectionObserver' in window && !still) {
     const io = new IntersectionObserver((ents) => ents.forEach((en) => {
       if (en.isIntersecting) { en.target.classList.add('in'); io.unobserve(en.target); }
