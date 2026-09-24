@@ -9,7 +9,7 @@
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400..800;1,500..700&family=Noto+Sans+Tamil:wght@600;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400..800;1,500..700&family=Noto+Sans+Tamil:wght@600;800&family=Tenor+Sans&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -26,6 +26,14 @@
       <a href="#clients">Clients</a>
       <a href="#iso">Certification</a>
       <a href="#contact">Contact</a>
+      <svg class="hdr__wave" aria-hidden="true" data-wave>
+        <defs>
+          <linearGradient id="wire" gradientUnits="userSpaceOnUse"><stop offset="0" stop-opacity="0"/><stop offset=".1"/><stop offset=".9"/><stop offset="1" stop-opacity="0"/></linearGradient>
+          <linearGradient id="spark" gradientUnits="userSpaceOnUse"><stop offset="0" stop-opacity="0"/><stop offset=".5"/><stop offset="1" stop-opacity="0"/></linearGradient>
+        </defs>
+        <path class="hdr__wire" stroke="url(#wire)"/>
+        <path class="hdr__sig" stroke="url(#spark)"/>
+      </svg>
     </nav>
     <div class="hdr__end">
       <a class="hdr__tel" href="tel:+919003940977"><small>Talk to an engineer</small>+91 90039 40977</a>
@@ -52,10 +60,19 @@
 
 <!-- ============ HERO ============ -->
 <section class="hero" id="top" data-hero>
+  <svg class="hero__phases" viewBox="0 0 1440 360" preserveAspectRatio="none" aria-hidden="true">
+    <path class="ph-r" d="M0 180.0L8 172.3L16 164.7L24 157.1L32 149.7L40 142.4L48 135.3L56 128.4L64 121.7L72 115.3L80 109.3L88 103.6L96 98.3L104 93.3L112 88.8L120 84.7L128 81.1L136 78.0L144 75.4L152 73.3L160 71.7L168 70.6L176 70.1L184 70.1L192 70.6L200 71.7L208 73.3L216 75.4L224 78.0L232 81.1L240 84.7L248 88.8L256 93.3L264 98.3L272 103.6L280 109.3L288 115.3L296 121.7L304 128.4L312 135.3L320 142.4L328 149.7L336 157.1L344 164.7L352 172.3L360 180.0L368 187.7L376 195.3L384 202.9L392 210.3L400 217.6L408 224.7L416 231.6L424 238.3L432 244.7L440 250.7L448 256.4L456 261.7L464 266.7L472 271.2L480 275.3L488 278.9L496 282.0L504 284.6L512 286.7L520 288.3L528 289.4L536 289.9L544 289.9L552 289.4L560 288.3L568 286.7L576 284.6L584 282.0L592 278.9L600 275.3L608 271.2L616 266.7L624 261.7L632 256.4L640 250.7L648 244.7L656 238.3L664 231.6L672 224.7L680 217.6L688 210.3L696 202.9L704 195.3L712 187.7L720 180.0L728 172.3L736 164.7L744 157.1L752 149.7L760 142.4L768 135.3L776 128.4L784 121.7L792 115.3L800 109.3L808 103.6L816 98.3L824 93.3L832 88.8L840 84.7L848 81.1L856 78.0L864 75.4L872 73.3L880 71.7L888 70.6L896 70.1L904 70.1L912 70.6L920 71.7L928 73.3L936 75.4L944 78.0L952 81.1L960 84.7L968 88.8L976 93.3L984 98.3L992 103.6L1000 109.3L1008 115.3L1016 121.7L1024 128.4L1032 135.3L1040 142.4L1048 149.7L1056 157.1L1064 164.7L1072 172.3L1080 180.0L1088 187.7L1096 195.3L1104 202.9L1112 210.3L1120 217.6L1128 224.7L1136 231.6L1144 238.3L1152 244.7L1160 250.7L1168 256.4L1176 261.7L1184 266.7L1192 271.2L1200 275.3L1208 278.9L1216 282.0L1224 284.6L1232 286.7L1240 288.3L1248 289.4L1256 289.9L1264 289.9L1272 289.4L1280 288.3L1288 286.7L1296 284.6L1304 282.0L1312 278.9L1320 275.3L1328 271.2L1336 266.7L1344 261.7L1352 256.4L1360 250.7L1368 244.7L1376 238.3L1384 231.6L1392 224.7L1400 217.6L1408 210.3L1416 202.9L1424 195.3L1432 187.7L1440 180.0L1448 172.3L1456 164.7L1464 157.1L1472 149.7L1480 142.4L1488 135.3L1496 128.4L1504 121.7L1512 115.3L1520 109.3L1528 103.6L1536 98.3L1544 93.3L1552 88.8L1560 84.7L1568 81.1L1576 78.0L1584 75.4L1592 73.3L1600 71.7L1608 70.6L1616 70.1L1624 70.1L1632 70.6L1640 71.7L1648 73.3L1656 75.4L1664 78.0L1672 81.1L1680 84.7L1688 88.8L1696 93.3L1704 98.3L1712 103.6L1720 109.3L1728 115.3L1736 121.7L1744 128.4L1752 135.3L1760 142.4L1768 149.7L1776 157.1L1784 164.7L1792 172.3L1800 180.0L1808 187.7L1816 195.3L1824 202.9L1832 210.3L1840 217.6L1848 224.7L1856 231.6L1864 238.3L1872 244.7L1880 250.7L1888 256.4L1896 261.7L1904 266.7L1912 271.2L1920 275.3L1928 278.9L1936 282.0L1944 284.6L1952 286.7L1960 288.3L1968 289.4L1976 289.9L1984 289.9L1992 289.4L2000 288.3L2008 286.7L2016 284.6L2024 282.0L2032 278.9L2040 275.3L2048 271.2L2056 266.7L2064 261.7L2072 256.4L2080 250.7L2088 244.7L2096 238.3L2104 231.6L2112 224.7L2120 217.6L2128 210.3L2136 202.9L2144 195.3L2152 187.7L2160 180.0"/>
+    <path class="ph-y" d="M0 275.3L8 278.9L16 282.0L24 284.6L32 286.7L40 288.3L48 289.4L56 289.9L64 289.9L72 289.4L80 288.3L88 286.7L96 284.6L104 282.0L112 278.9L120 275.3L128 271.2L136 266.7L144 261.7L152 256.4L160 250.7L168 244.7L176 238.3L184 231.6L192 224.7L200 217.6L208 210.3L216 202.9L224 195.3L232 187.7L240 180.0L248 172.3L256 164.7L264 157.1L272 149.7L280 142.4L288 135.3L296 128.4L304 121.7L312 115.3L320 109.3L328 103.6L336 98.3L344 93.3L352 88.8L360 84.7L368 81.1L376 78.0L384 75.4L392 73.3L400 71.7L408 70.6L416 70.1L424 70.1L432 70.6L440 71.7L448 73.3L456 75.4L464 78.0L472 81.1L480 84.7L488 88.8L496 93.3L504 98.3L512 103.6L520 109.3L528 115.3L536 121.7L544 128.4L552 135.3L560 142.4L568 149.7L576 157.1L584 164.7L592 172.3L600 180.0L608 187.7L616 195.3L624 202.9L632 210.3L640 217.6L648 224.7L656 231.6L664 238.3L672 244.7L680 250.7L688 256.4L696 261.7L704 266.7L712 271.2L720 275.3L728 278.9L736 282.0L744 284.6L752 286.7L760 288.3L768 289.4L776 289.9L784 289.9L792 289.4L800 288.3L808 286.7L816 284.6L824 282.0L832 278.9L840 275.3L848 271.2L856 266.7L864 261.7L872 256.4L880 250.7L888 244.7L896 238.3L904 231.6L912 224.7L920 217.6L928 210.3L936 202.9L944 195.3L952 187.7L960 180.0L968 172.3L976 164.7L984 157.1L992 149.7L1000 142.4L1008 135.3L1016 128.4L1024 121.7L1032 115.3L1040 109.3L1048 103.6L1056 98.3L1064 93.3L1072 88.8L1080 84.7L1088 81.1L1096 78.0L1104 75.4L1112 73.3L1120 71.7L1128 70.6L1136 70.1L1144 70.1L1152 70.6L1160 71.7L1168 73.3L1176 75.4L1184 78.0L1192 81.1L1200 84.7L1208 88.8L1216 93.3L1224 98.3L1232 103.6L1240 109.3L1248 115.3L1256 121.7L1264 128.4L1272 135.3L1280 142.4L1288 149.7L1296 157.1L1304 164.7L1312 172.3L1320 180.0L1328 187.7L1336 195.3L1344 202.9L1352 210.3L1360 217.6L1368 224.7L1376 231.6L1384 238.3L1392 244.7L1400 250.7L1408 256.4L1416 261.7L1424 266.7L1432 271.2L1440 275.3L1448 278.9L1456 282.0L1464 284.6L1472 286.7L1480 288.3L1488 289.4L1496 289.9L1504 289.9L1512 289.4L1520 288.3L1528 286.7L1536 284.6L1544 282.0L1552 278.9L1560 275.3L1568 271.2L1576 266.7L1584 261.7L1592 256.4L1600 250.7L1608 244.7L1616 238.3L1624 231.6L1632 224.7L1640 217.6L1648 210.3L1656 202.9L1664 195.3L1672 187.7L1680 180.0L1688 172.3L1696 164.7L1704 157.1L1712 149.7L1720 142.4L1728 135.3L1736 128.4L1744 121.7L1752 115.3L1760 109.3L1768 103.6L1776 98.3L1784 93.3L1792 88.8L1800 84.7L1808 81.1L1816 78.0L1824 75.4L1832 73.3L1840 71.7L1848 70.6L1856 70.1L1864 70.1L1872 70.6L1880 71.7L1888 73.3L1896 75.4L1904 78.0L1912 81.1L1920 84.7L1928 88.8L1936 93.3L1944 98.3L1952 103.6L1960 109.3L1968 115.3L1976 121.7L1984 128.4L1992 135.3L2000 142.4L2008 149.7L2016 157.1L2024 164.7L2032 172.3L2040 180.0L2048 187.7L2056 195.3L2064 202.9L2072 210.3L2080 217.6L2088 224.7L2096 231.6L2104 238.3L2112 244.7L2120 250.7L2128 256.4L2136 261.7L2144 266.7L2152 271.2L2160 275.3"/>
+    <path class="ph-b" d="M0 84.7L8 88.8L16 93.3L24 98.3L32 103.6L40 109.3L48 115.3L56 121.7L64 128.4L72 135.3L80 142.4L88 149.7L96 157.1L104 164.7L112 172.3L120 180.0L128 187.7L136 195.3L144 202.9L152 210.3L160 217.6L168 224.7L176 231.6L184 238.3L192 244.7L200 250.7L208 256.4L216 261.7L224 266.7L232 271.2L240 275.3L248 278.9L256 282.0L264 284.6L272 286.7L280 288.3L288 289.4L296 289.9L304 289.9L312 289.4L320 288.3L328 286.7L336 284.6L344 282.0L352 278.9L360 275.3L368 271.2L376 266.7L384 261.7L392 256.4L400 250.7L408 244.7L416 238.3L424 231.6L432 224.7L440 217.6L448 210.3L456 202.9L464 195.3L472 187.7L480 180.0L488 172.3L496 164.7L504 157.1L512 149.7L520 142.4L528 135.3L536 128.4L544 121.7L552 115.3L560 109.3L568 103.6L576 98.3L584 93.3L592 88.8L600 84.7L608 81.1L616 78.0L624 75.4L632 73.3L640 71.7L648 70.6L656 70.1L664 70.1L672 70.6L680 71.7L688 73.3L696 75.4L704 78.0L712 81.1L720 84.7L728 88.8L736 93.3L744 98.3L752 103.6L760 109.3L768 115.3L776 121.7L784 128.4L792 135.3L800 142.4L808 149.7L816 157.1L824 164.7L832 172.3L840 180.0L848 187.7L856 195.3L864 202.9L872 210.3L880 217.6L888 224.7L896 231.6L904 238.3L912 244.7L920 250.7L928 256.4L936 261.7L944 266.7L952 271.2L960 275.3L968 278.9L976 282.0L984 284.6L992 286.7L1000 288.3L1008 289.4L1016 289.9L1024 289.9L1032 289.4L1040 288.3L1048 286.7L1056 284.6L1064 282.0L1072 278.9L1080 275.3L1088 271.2L1096 266.7L1104 261.7L1112 256.4L1120 250.7L1128 244.7L1136 238.3L1144 231.6L1152 224.7L1160 217.6L1168 210.3L1176 202.9L1184 195.3L1192 187.7L1200 180.0L1208 172.3L1216 164.7L1224 157.1L1232 149.7L1240 142.4L1248 135.3L1256 128.4L1264 121.7L1272 115.3L1280 109.3L1288 103.6L1296 98.3L1304 93.3L1312 88.8L1320 84.7L1328 81.1L1336 78.0L1344 75.4L1352 73.3L1360 71.7L1368 70.6L1376 70.1L1384 70.1L1392 70.6L1400 71.7L1408 73.3L1416 75.4L1424 78.0L1432 81.1L1440 84.7L1448 88.8L1456 93.3L1464 98.3L1472 103.6L1480 109.3L1488 115.3L1496 121.7L1504 128.4L1512 135.3L1520 142.4L1528 149.7L1536 157.1L1544 164.7L1552 172.3L1560 180.0L1568 187.7L1576 195.3L1584 202.9L1592 210.3L1600 217.6L1608 224.7L1616 231.6L1624 238.3L1632 244.7L1640 250.7L1648 256.4L1656 261.7L1664 266.7L1672 271.2L1680 275.3L1688 278.9L1696 282.0L1704 284.6L1712 286.7L1720 288.3L1728 289.4L1736 289.9L1744 289.9L1752 289.4L1760 288.3L1768 286.7L1776 284.6L1784 282.0L1792 278.9L1800 275.3L1808 271.2L1816 266.7L1824 261.7L1832 256.4L1840 250.7L1848 244.7L1856 238.3L1864 231.6L1872 224.7L1880 217.6L1888 210.3L1896 202.9L1904 195.3L1912 187.7L1920 180.0L1928 172.3L1936 164.7L1944 157.1L1952 149.7L1960 142.4L1968 135.3L1976 128.4L1984 121.7L1992 115.3L2000 109.3L2008 103.6L2016 98.3L2024 93.3L2032 88.8L2040 84.7L2048 81.1L2056 78.0L2064 75.4L2072 73.3L2080 71.7L2088 70.6L2096 70.1L2104 70.1L2112 70.6L2120 71.7L2128 73.3L2136 75.4L2144 78.0L2152 81.1L2160 84.7"/>
+  </svg>
   <div class="wrap hero__in">
     <div class="hero__copy">
-      <h1>When the grid fails, your plant doesn’t&nbsp;notice.</h1>
-      <p class="hero__lede">We design, supply and commission power backup, automation and data-centre systems for paper mills, cement plants, utilities and factories across Tamil Nadu. One team, from the incoming feeder to the SCADA screen.</p>
+      <h1>
+        <span class="ln"><span>When the grid</span></span>
+        <span class="ln"><span>fails, your plant</span></span>
+        <span class="ln"><span class="calm">doesn’t&nbsp;notice.</span></span>
+      </h1>
+      <p class="hero__lede">We design, supply and commission power backup, automation and data-centre systems for paper mills, cement plants, utilities and factories across Tamil&nbsp;Nadu.</p>
       <div class="hero__cta">
         <a href="#contact" class="btn btn--blue">Get a quote</a>
         <a href="tel:+919003940977" class="btn btn--line">
@@ -551,13 +568,12 @@
           <label><span class="sr">Phone</span><input name="phone" type="tel" required autocomplete="tel" placeholder="phone number" size="12"></label>.
         </p>
         <label class="lib__more">Anything else we should know?
-          <textarea name="msg" rows="3" placeholder="Load, backup time, timeline. You can attach drawings in the email that opens."></textarea>
+          <textarea name="msg" rows="3" placeholder="Type something..."></textarea>
         </label>
         <div class="lib__go">
           <button type="submit" class="btn btn--blue">Send enquiry
             <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
           </button>
-          <p class="lib__note" data-note>Opens your email app with everything filled in.</p>
         </div>
       </form>
 
@@ -565,10 +581,14 @@
         <p class="talk__lbl">Breakdown? Call directly.</p>
         <a class="phone" href="tel:+919003940977"><small>Jayaprakash</small>+91 90039 40977</a>
         <a class="phone" href="tel:+919677813584"><small>Manikandan</small>+91 96778 13584</a>
-        <div class="talk__addr">
-          <p><a href="mailto:minkalamjm@gmail.com">minkalamjm@gmail.com</a></p>
-          <p>#7A, PP Nagar, 2nd Cross Street, Behind Kongu Mandapam, Tiruchengode Road, Pallipalayam, Erode 638 006</p>
-          <a class="link link--light" href="https://www.google.com/maps/search/?api=1&amp;query=PP+Nagar+Tiruchengode+Road+Pallipalayam+Erode+638006" target="_blank" rel="noopener">Get directions <span aria-hidden="true">↗</span></a>
+        <p class="talk__mail"><a href="mailto:minkalamjm@gmail.com">minkalamjm@gmail.com</a></p>
+        <div class="next">
+          <p class="next__h">What happens next</p>
+          <ol>
+            <li><b>We call you back</b>to understand what you need.</li>
+            <li><b>An engineer visits</b>your site and studies the load.</li>
+            <li><b>You get a proposal</b>with the design and a written quote.</li>
+          </ol>
         </div>
       </aside>
     </div>
@@ -582,8 +602,7 @@
     <div class="ftr__top">
       <div class="ftr__brand">
         <a href="#top" class="logo" aria-label="JM Minkalam, back to top"><span class="logo__ph" aria-hidden="true"><i></i><i></i><i></i></span><span class="logo__txt">JM Minkalam</span></a>
-        <p>Power backup, automation and data-centre systems. Designed, supplied and commissioned from Erode since 2021.</p>
-        <p class="ftr__clock"><i aria-hidden="true"></i><span>Erode · <span data-clock>--:--</span> IST</span></p>
+        <p>Power backup, automation and data-centre systems. Designed, supplied and commissioned from Erode since 2021.</p> 
       </div>
 
       <nav class="ftr__cols" aria-label="Footer">
@@ -621,7 +640,7 @@
     <p class="ftr__word" aria-hidden="true">JM Minkalam<span lang="ta">மின்கலம்</span></p>
 
     <div class="ftr__base">
-      <span>© <span data-year>2026</span> JM Minkalam. All rights reserved.</span>
+      <span>© <span data-year>2026</span> <a href="https://framecape.com" target="_blank" rel="noopener">Framecape</a>. All rights reserved.</span>
       <span>ISO 9001:2015 · Cert. E20260851563 · DPIIT-recognised Startup India</span>
       <a href="#top">Back to top ↑</a>
     </div>
