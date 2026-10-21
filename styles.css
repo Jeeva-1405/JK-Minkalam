@@ -244,7 +244,7 @@ body.menu-open { overflow: hidden; }
 .js .fx__more { opacity: .35; transition: opacity .6s var(--ease); }
 .js .fx.is-on .fx__more { opacity: 1; }
 .fx__oem { margin-top: 14px; font-size: 14px; font-weight: 600; color: var(--ink); }
-.fx__oem::before { content: "Make  "; white-space: pre; font-weight: 500; color: var(--mut); }
+.fx__oem::before { content: "Brand  "; white-space: pre; font-weight: 500; color: var(--mut); }
 .fx__go { display: inline-flex; gap: 8px; margin-top: 18px; font-weight: 600; font-size: 15px; color: var(--blue); text-decoration: none; border-bottom: 1px solid currentColor; padding-bottom: 2px; }
 .fx__go::after { content: "→"; transition: transform .3s var(--ease); }
 .fx__go:hover::after { transform: translateX(4px); }
